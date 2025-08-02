@@ -1,0 +1,281 @@
+a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004aad;
+    padding: 1rem 0;
+}
+
+header>img {
+    width: 18rem;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 8rem 0;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.mainTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 5rem 0 1rem 0;
+    width: 38rem;
+}
+
+.mainTitle>h1 {
+    font-family: "Open Sans", serif;
+    font-size: 30pt;
+    margin: 0;
+}
+
+.mainTitle>p {
+    font-size: 13pt;
+    font-family: "Lexend Deca", serif;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.mainText>p {
+    font-family: "Lexend Deca", serif;
+    font-size: 13pt;
+    width: 38rem;
+}
+
+.mainText>h2 {
+    font-family: "Lexend Deca", serif;
+    font-size: 13pt;
+    width: 38rem;
+}
+
+.mainText>div {
+    font-family: "Lexend Deca", serif;
+    font-size: 13pt;
+    width: 38rem;
+}
+
+
+.mainImage>img {
+    width: 38rem;
+}
+
+.mainImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.mainImage>p {
+    font-family: "Lexend Deca", serif;
+    font-size: 10pt;
+    margin: 0.3rem 0 0 0;
+}
+
+.writerProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38rem;
+    gap: 1rem;
+    margin: 4rem 0 0 0;
+}
+
+.writerProfile>img {
+    width: 6rem;
+    clip-path: circle();
+}
+
+.writerProfile>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.writerProfile>div>h4 {
+    font-family: "Open Sans", serif;
+    text-align: center;
+    margin: 0 0 0.3rem 0;
+}
+
+.writerProfile>div>p {
+    font-family: "Lexend Deca", serif;
+    text-align: center;
+    font-size: 10pt;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #004aad;
+}
+
+footer>img {
+    margin: 0;
+    cursor: pointer;
+    width: 12rem;
+}
+
+.socialWides {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.socialWides>p>a {
+    color: #ffffff;
+  border: none;
+}
+
+.socialWides>p>a:active {
+    color: rgb(72, 72, 72);
+}
+
+#copyright {
+    color: rgb(255, 255, 255);
+    font-family: "Lexend Deca", serif;
+    font-size: 10pt;
+    margin: 1.5rem 0 0 0;
+}
+
+@media (max-width: 850px) {
+    header {
+        padding: 0.8rem 1rem;
+    }
+
+    main {
+        margin: 0 0 2rem 0;
+    }
+
+    .mainTitle {
+        margin: 2rem 0 0 0;
+        width: 90%;
+    }
+
+    .mainTitle>h1 {
+        font-size: 26pt;
+    }
+
+    .mainText>p, .mainText>h2, .mainText>div {
+        width: 90%;
+    }
+
+    .mainImage>img {
+        width: 100%;
+    }
+
+    .writerProfile {
+        margin: 1rem 0 0 0;
+        width: 90%;
+    }
+
+    .writerProfile>img {
+        width: 4.5rem;
+    }
+}
+
+.menuMobile {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgba(99, 99, 99, 0.627);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menuMobile>section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgb(255, 179, 0);
+    padding: 1.8rem 1.4rem 0 0;
+    width: 40%;
+    height: 100%;
+}
+
+#closeMenuMobileDiv {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#closeMenuMobileDiv:hover {
+    color: rgb(152, 152, 152);
+}
+
+#closeMenuMobileDiv:active {
+    color: rgb(105, 105, 105);
+}
+
+#menuMobile {
+    display: none;
+}
+
+.menuMobileInLiveLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.5rem;
+    margin: 1.6rem 0 1.6rem 0;
+    padding: 1.5rem 0 1.5rem 0;
+    border-bottom: 1px solid rgb(65, 65, 65);
+    border-top: 1px solid rgb(65, 65, 65);
+    width: 90%;
+}
+
+.menuMobileInLiveLinks>div {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#inLiveMobile {
+    color: transparent;
+    font-size: 0.7rem;
+}
+
+.mobileSocialWides {
+    display: flex;
+    gap: 1rem;
+}
+
+.menuMobileInLiveLinks>div>a, .menuMobileInLiveLinks>a {
+    font-family: "Lexend Deca", serif;
+}
+
+.menuMobileInLiveLinks>div>a:hover, .menuMobileInLiveLinks>a:hover, .mobileSocialWides>p>a:hover {
+    color: rgb(152, 152, 152);
+}
+
+.menuMobileInLiveLinks>div>a:active, .menuMobileInLiveLinks>a:active, .mobileSocialWides>p>a:active {
+    color: rgb(105, 105, 105);
+}
